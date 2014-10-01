@@ -1,3 +1,6 @@
+<?php
+	include("api/renderer.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,35 +13,10 @@
 	<title>TTT</title>
 </head>
 <body>
-
-	<div class="container">
-
-		<div class="row text-center" >
-
-			<div class="col-xs-4 game-box">
-				<div class="outer">
-					<div class="inner">
-						<i class="fa fa-times"></i>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-4 game-box">
-				<div class="outer">
-					<div class="inner">
-						X
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-4 game-box">
-				<div class="outer">
-					<div class="inner">
-						X
-					</div>
-				</div>
-			</div>
-
-		</div>
-
+	<div class="container game">	
+		<?php
+			Renderer::grid();
+		?>
 	</div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

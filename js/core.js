@@ -9,8 +9,8 @@ $(function() {
 });
 
 function adjustBoxes() {
+	var w = $(".game-box").first().width();
 	$(".game-box").each(function() {
-		var w = $(this).width();
 		$(this).css("height", w+"px");
 		$(this).find(".outer").css("height", w+"px").css("width", w+"px");
 	});
