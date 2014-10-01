@@ -1,11 +1,8 @@
 $(function() {
-
 	adjustBoxes();
-
 	$(window).resize(function() {
 		adjustBoxes();
 	});
-
 });
 
 function adjustBoxes() {
