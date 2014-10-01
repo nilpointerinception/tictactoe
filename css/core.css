@@ -1,0 +1,31 @@
+body {
+	background-color: "golden-rod";
+}
+
+.game-box {
+	font-size: 200px;
+	border: 1px solid black;
+	line-height: 0px;
+}
+
+.outer {
+ 	display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+	width: 100%;
+	text-align: center;
+}
+
+.game-box .inner { 
+	/*height: 100%;
+	line-height: 100px;
+	margin: 0px;*/
+}
+
+@media(max-width:767px){
+	.game-box {
+	
+	}
+}
